@@ -1,0 +1,107 @@
+/* --- BASE RESET --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: #d7e4f2;
+    background-image: radial-gradient(#ffffff 2px, transparent 2px);
+    background-size: 25px 25px;
+    font-family: 'Tahoma', sans-serif;
+    padding: 20px;
+}
+
+.desktop-wrapper { max-width: 1000px; margin: 0 auto; }
+
+/* --- XP WINDOW SYSTEM --- */
+.xp-window {
+    background: #ece9d8;
+    border: 2px solid #003399;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+}
+
+.xp-title {
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 15%, #245edb 25%, #245edb 90%, #1941a5 100%);
+    padding: 4px 8px;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 1px 1px #000;
+}
+
+.xp-body { padding: 10px; border-top: 1px solid #fff; }
+
+/* --- GRID SYSTEM --- */
+.layout-grid { display: grid; grid-template-columns: 200px 1fr; gap: 15px; }
+
+/* --- SHADING SPOTS (INSETS) --- */
+.inset-well {
+    background: #ffffff;
+    border: 2px inset #808080;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2);
+    padding: 8px;
+}
+
+/* --- LIFTING HOVER ANIMATION --- */
+.xp-btn, .social-link {
+    display: block;
+    background: linear-gradient(to bottom, #fff, #cdcdcd);
+    border: 1px solid #7a7a7a;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    text-align: center;
+    box-shadow: 0px 2px 0px #888;
+    transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+}
+
+.xp-btn:hover, .social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* --- SOCIALS GRID --- */
+.socials-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+    image-rendering: pixelated;
+}
+
+/* --- PROFILE SPECIFICS --- */
+.white-page { background: #fff; padding: 20px; }
+.profile-layout { display: flex; gap: 20px; margin-bottom: 20px; }
+.image-frame { border: 1px solid #000; padding: 5px; background: #fff; box-shadow: 4px 4px 0px #245edb; }
+.image-frame img { width: 160px; height: 160px; display: block; object-fit: cover; }
+.label-box { background: #003399; color: white; text-align: center; font-size: 10px; font-weight: bold; padding: 2px; margin-top: 5px; }
+.data-column { flex-grow: 1; display: flex; flex-direction: column; gap: 10px; }
+.data-field label, .bio-section label { font-size: 10px; font-weight: bold; color: #003399; display: block; margin-bottom: 2px; }
+.field-text { font-size: 12px; font-weight: bold; }
+.bio-text { min-height: 100px; font-size: 12px; line-height: 1.4; }
+
+/* --- WINDOW CONTROLS --- */
+.controls button {
+    width: 16px; height: 14px; font-size: 9px;
+    background: #ece9d8; border: 1px solid #fff;
+    border-right-color: #808080; border-bottom-color: #808080;
+}

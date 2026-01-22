@@ -1,0 +1,174 @@
+/* --- RESET & BACKGROUND --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: #d7e4f2;
+    background-image: radial-gradient(#ffffff 2px, transparent 2px);
+    background-size: 25px 25px;
+    font-family: 'Tahoma', sans-serif;
+    padding: 20px;
+}
+
+.desktop-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- THE XP WINDOW SYSTEM --- */
+.xp-window {
+    background: #ece9d8;
+    border: 2px solid #003399;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.xp-title {
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 15%, #245edb 25%, #245edb 90%, #1941a5 100%);
+    padding: 4px 8px;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 1px 1px #000;
+}
+
+.xp-body { padding: 10px; border-top: 1px solid #ffffff; }
+
+/* --- SHADING SPOTS (INSETS) --- */
+.inset-spot {
+    background: #ffffff;
+    border: 2px inset #808080;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2);
+    padding: 8px;
+}
+
+/* --- LAYOUT GRID --- */
+.interface-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 15px;
+}
+
+/* --- NOTEPAD INTERNALS --- */
+.white-page { background: #ffffff; min-height: 200px; }
+
+.welcome-frame {
+    border: 1px solid #000;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 4px 4px 0px #245edb;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.img-placeholder {
+    background: #000;
+    color: #00ff00;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.tag {
+    background: #003399;
+    color: white;
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* --- CHAT INTERNALS --- */
+.chat-history { height: 120px; overflow-y: scroll; margin-bottom: 10px; font-size: 11px; }
+
+.cbox-well { border: 1px solid #003399; }
+
+.cbox-header {
+    background: #245edb;
+    color: white;
+    font-size: 9px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-bg { background: #d7e4f2; }
+
+.xp-input {
+    width: 100%;
+    margin-bottom: 4px;
+    border: 1px solid #7a7a7a;
+    font-size: 11px;
+}
+
+/* --- BUTTONS --- */
+.xp-btn {
+    display: block;
+    background: linear-gradient(to bottom, #fff, #cdcdcd);
+    border: 1px solid #7a7a7a;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+}
+
+.controls button {
+    width: 16px;
+    height: 14px;
+    font-size: 9px;
+    background: #ece9d8;
+    border: 1px solid #fff;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+}
+/* --- LIFTING HOVER ANIMATION --- */
+
+/* Sidebar Navigation & Music Player Buttons */
+.xp-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to bottom, #fff, #cdcdcd);
+    border: 1px solid #7a7a7a;
+    padding: 3px;
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    text-align: center;
+    box-shadow: 0px 2px 0px #888; /* Shadow for depth */
+    transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+}
+
+/* The Hover State: Lifts the button up */
+.xp-btn:hover {
+    transform: translateY(-3px); /* Moves button UP by 3 pixels */
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2); /* Increases shadow to look higher */
+    cursor: pointer;
+}
+
+/* The Active State: Pushes it back down when clicked */
+.xp-btn:active {
+    transform: translateY(1px); /* Pushes slightly lower than original */
+    box-shadow: inset 1px 1px 2px #808080;
+}
+
+/* Hyperlinks inside Notepad Bio */
+.notepad-content a {
+    display: inline-block; /* Required for transform to work on inline text */
+    color: #0000ff;
+    text-decoration: underline;
+    transition: transform 0.1s ease;
+}
+
+.notepad-content a:hover {
+    transform: translateY(-2px); /* Lifts the text link up */
+    text-decoration: none;
+}
