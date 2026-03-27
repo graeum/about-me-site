@@ -2,92 +2,215 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PROFILE // USER_XP</title>
+    <title>Graham's World</title>
+    <link rel="icon" type="image/png" href="https://win98icons.alexmeub.com/icons/png/windows-0.png">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="profile.css">
+    <style>
+        /* Classic Windows 95 Scrollbar */
+        .ms-scroll-body::-webkit-scrollbar { width: 16px; }
+        .ms-scroll-body::-webkit-scrollbar-track {
+            background: #dfdfdf;
+            box-shadow: inset 1px 1px #808080, inset -1px -1px #ffffff;
+        }
+        .ms-scroll-body::-webkit-scrollbar-thumb {
+            background: #bfbfbf;
+            box-shadow: inset 1px 1px #ffffff, inset -1px -1px #808080;
+            border: 1px solid #000;
+        }
+
+        .minspace-outer { background: white !important; border: 1px solid #7a7a6c; }
+        .ms-top-layout { display: flex; gap: 15px; padding: 15px; }
+        
+        .ms-table { width: 100%; font-size: 10px; border-collapse: collapse; margin-top: 5px; }
+        .ms-table td { border: 1px solid #eee; padding: 4px; text-align: center; }
+
+        .favorites-split { display: flex; gap: 20px; padding: 15px; border-top: 1px solid #7a7a6c; }
+        .compact-film-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+        .small-f-box { 
+            width: 100%; 
+            aspect-ratio: 2/3; 
+            background: #f0f0f0; 
+            border: 1px solid #7a7a6c; 
+            max-height: 100px; 
+        }
+
+        .app-list { display: flex; flex-direction: column; gap: 8px; padding: 10px; }
+        .app-item { display: flex; align-items: center; gap: 8px; text-decoration: none; color: black; font-size: 11px; }
+        .app-item img { width: 24px; height: 24px; }
+        .app-item:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
 
-<div class="desktop-wrapper">
-    <header class="xp-window banner">
-        <div class="xp-title">
-            <span>user_profile_manager.exe</span>
-            <div class="controls"><button>_</button><button>X</button></div>
-        </div>
-        <div class="xp-body banner-content">
-            <h1 class="pixel-font">PROFILE: MARSH</h1>
-        </div>
-    </header>
-
-    <div class="layout-grid">
-        <aside class="side-col">
-            <div class="xp-window">
-                <div class="xp-title"><span>navigation</span></div>
-                <div class="xp-body">
-                    <a href="index.html" class="xp-btn">back to home</a>
-                    <a href="#" class="xp-btn">interests</a>
-                    <a href="#" class="xp-btn">stamps</a>
+<div class="desktop-wallpaper">
+    <div class="container">
+        <header class="system-header">
+            <div class="title-strip">
+                <img src="https://win98icons.alexmeub.com/icons/png/msie2-2.png" alt="icon">
+                <span class="brand-name">GRAEUM.SYS</span>
+                <div class="header-clock" id="clock">00:00:00</div>
+            </div>
+            <div class="image-marquee-container">
+                <div class="marquee-track">
+                    <img src="https://64.media.tumblr.com/7659b403513faa4c91564320c35021ab/a3884883a9200b68-c3/s250x400/6fa02a9bcb33d500a9b945e2cf78cd359afbec34.gifv" alt="1">
+                    <img src="https://64.media.tumblr.com/7bb530088dadd7a0114e33d39d4b58a9/a3884883a9200b68-cb/s250x400/426091f373e0ed871a80f16af08399a545706484.gifv" alt="2">
+                    <img src="https://64.media.tumblr.com/64eebb3267828eac4b92be9e498bcc2e/7e983b911b6bf8de-6d/s250x400/ac6f96314caeecfd14b5d575c27e4bfdeb2c7c45.gifv" alt="3">
+                    <img src="https://64.media.tumblr.com/9c48e0c3a4408a3caf6fd572760307f4/7e983b911b6bf8de-51/s250x400/1f0e40c41f8d18680ec05f27d8093a4e9039010e.gifv" alt="4">
+                    <img src="https://64.media.tumblr.com/cf9c3efd86ebaab7b5c9b7410a129246/4ed22129fdd9c51a-8e/s250x400/dc1a2b5376139004b7541e19cd39c3c1fa3f0a33.gifv" alt="1">
+                    <img src="https://64.media.tumblr.com/a91787c346ed207826aad4da687effd2/d5c9c42d8e789b8e-bc/s250x400/dc6e9ef5679d94f6858c3499ed596eba1688280f.gifv" alt="2">
+                    <img src="https://64.media.tumblr.com/0606b820fe983c5ede79a03865800f5b/d5c9c42d8e789b8e-e2/s250x400/32d99503cd79f00b85b88405f0a547a45faa5931.gifv" alt="3">
+                    <img src="https://64.media.tumblr.com/8c27998f53a583aaf741266add21b19d/7d1cabdbcea12f0a-ca/s250x400/b45c7bad37315f5060c613ef02c2cfdf0d68ff29.gifv" alt="4">
                 </div>
             </div>
+        </header>
 
-            <div class="xp-window">
-                <div class="xp-title"><span>socials</span></div>
-                <div class="xp-body inset-well socials-grid">
-                    <a href="https://instagram.com" target="_blank" class="social-link">
-                        <img src="insta_icon.png" alt="IG">
-                    </a>
-                    <a href="https://twitter.com" target="_blank" class="social-link">
-                        <img src="twitter_icon.png" alt="X">
-                    </a>
-                    <a href="https://discord.com" target="_blank" class="social-link">
-                        <img src="discord_icon.png" alt="DC">
-                    </a>
+        <div class="layout-grid">
+            <aside class="sidebar-left">
+                <div class="win95-box">
+                    <div class="win95-header"><span>Navigation</span></div>
+                    <div class="win95-body no-padding">
+                        <nav class="side-nav">
+                            <a href="index.html" class="index.html">Home</a>
+                            <a href="profile.html" class="nav-item">Profile</a>
+                            <a href="https://your-guestbook-link.com" target="_blank" class="nav-item">Guestbook</a>
+                            <a href="byf.html" class="byf.html">Interact</a>
+                            <a href="interests.html" class="interests.html">Interests</a>
+                            <a href="dni.html" class="dni.html">DNI</a>
+                        </nav>
+                    </div>
                 </div>
-            </div>
-        </aside>
+            </aside>
 
-        <main class="main-col">
-            <section class="xp-window">
-                <div class="xp-title">
-                    <span>profile_viewer.sys</span>
-                    <div class="controls"><button>_</button><button>X</button></div>
-                </div>
-                <div class="xp-body white-page">
-                    <div class="profile-layout">
-                        
-                        <div class="photo-column">
-                            <div class="image-frame">
-                                <img src="https://i.pinimg.com/736x/8a/83/64/8a83649f756d23faaa489124f49827d0.jpg" alt="Profile pic">
+            <main class="content-main">
+                <div class="win95-box">
+                    <div class="win95-header">
+                        <span>profile.exe</span>
+                        <div class="win95-controls">
+                            <button class="win95-btn-ctrl"><span>_</span></button>
+                            <button class="win95-btn-ctrl close"><span>×</span></button>
+                        </div>
+                    </div>
+                    
+                    <div class="win95-body no-padding minspace-outer">
+                        <div class="ms-top-layout">
+                            <div style="width: 170px; text-align: center;">
+                                <img src="images/profilephoto.jpeg" style="width:100%; border:1px solid #7a7a6c;">
+                                <div style="color: #000080; font-weight: bold; margin-top: 8px;">graham [17]</div>
+                                <div class="ms-stat-pill">HE / HIM</div>
+                                <div class="ms-stat-pill">NOV. 13TH</div>
+                                <div class="ms-stat-pill">infp</div>
                             </div>
-                            <div class="label-box">USER_AVATAR</div>
+
+                            <div style="width: 200px;">
+                                <div class="ms-scroll-window" style="border: 1px solid #7a7a6c; height: 180px; display: flex; flex-direction: column;">
+                                    <div style="background: #7a7a6c; color: white; padding: 3px; font-size: 10px;">About Me ...</div>
+                                    <div class="ms-scroll-body" style="overflow-y: scroll; padding: 8px; font-size: 11px; flex-grow: 1;">
+                                        <b><i>Jack Daniels makes us all puke.</i></b><br><br>
+                            
+                                        <b>BIO:</b> hiii i'm graham! i post edits on the goonspace (tiktok) and i like coding! you can find more about me in my other tabs! :B<br><br>
+                                        <b>ABOUT THE SITE:</b> coding this site gave me more creative reign than using a PESKY carrd or strawpage i'm using my coding skills to my advantage here guys look at how jolly and inaccurate this windows 95 site is!1!1!1!!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
+                                <div>
+                                    <div style="font-size: 11px; font-weight: bold; border-bottom: 1px solid #7a7a6c;">Where To Find Me</div>
+                                    <table class="ms-table">
+                                        <tr><td>instagram</td><td>patreon</td></tr>
+                                        <tr><td>tiktok</td><td>twitter</td></tr>
+                                    </table>
+                                </div>
+                                
+                                <div>
+                                    <div style="font-size: 11px; font-weight: bold; border-bottom: 1px solid #7a7a6c;">Extras !</div>
+                                    <table class="ms-table">
+                                        <tr><td><a href="https://discord.gg/U7gS36ZeUc" target="_blank">discord server</a></td><td><a href="https://www.last.fm/user/soIven" target="_blank">lastfm</a></td></tr>
+                                        <tr><td><a href="https://letterboxd.com/phonies/" target="_blank">letterboxd</a></td><td><a href="https://open.spotify.com/user/31lttyq5h4vuiwcjs3kr5g32kche?si=bd87ff580a164e0b" target="_blank">spotify</a><td></td></tr>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="data-column">
-                            <div class="data-field">
-                                <label>NAME:</label>
-                                <div class="inset-well field-text">GRAHAM</div>
+                        <div style="background: #d4d4ca; border-top: 1px solid #7a7a6c; border-bottom: 1px solid #7a7a6c; padding: 4px; font-size: 10px;">
+                            <marquee scrollamount="3"></marquee>
+                        </div>
+
+                        <div class="favorites-split">
+                            <div style="flex: 1.2;">
+                                <div style="font-weight: bold; font-size: 11px; margin-bottom: 5px;">Favorite Songs</div>
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/79g6gvnrd6UVD2Ub6qUYV4?utm_source=generator" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             </div>
-                            <div class="data-field">
-                                <label>PRONOUNS:</label>
-                                <div class="inset-well field-text">HE / HIM</div>
-                            </div>
-                            <div class="data-field">
-                                <label>MOOD:</label>
-                                <div class="inset-well field-text">COFFEE_ADDICTED</div>
+                            <div style="flex: 0.8;">
+                                <div style="font-weight: bold; font-size: 11px; margin-bottom: 5px;">Top 4 Films</div>
+                                <div class="compact-film-grid">
+                                    <div class="small-f-box"></div><div class="small-f-box"></div>
+                                    <div class="small-f-box"></div><div class="small-f-box"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="bio-section">
-                        <label>DETAILED_BIO.TXT</label>
-                        <div class="inset-well bio-text">
-                            Welcome to my profile. This is where I keep my extra data and extended bio info. Everything is contained within the shading spots to match the XP desktop aesthetic.
-                        </div>
-                    </div>
                 </div>
-            </section>
-        </main>
+            </main>
+
+              <div class="desktop-icon-layer">
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/paint_file-2.png" alt="paint">
+        <span>MS Paint</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/calculator-0.png" alt="calc">
+        <span>Calculator</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/media_player-0.png" alt="media">
+        <span>Media Player</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="files">
+        <span>My Documents</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/mailbox_world-2.png" alt="inbox">
+        <span>Inbox</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/msn-0.png" alt="msn">
+        <span>The Microsoft Network</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/briefcase-2.png" alt="briefcase">
+        <span>My Briefcase</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty-0.png" alt="bin">
+        <span>Recycle Bin</span>
+    </a>
+</div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 
+<footer class="win95-taskbar">
+    <button class="start-btn">Start</button>
+    <div class="task-active"></div>
+</footer>
+
+<script>
+    function updateClock() {
+        const d = new Date();
+        const time = d.getHours().toString().padStart(2, '0') + ":" + 
+                     d.getMinutes().toString().padStart(2, '0') + ":" + 
+                     d.getSeconds().toString().padStart(2, '0');
+        document.getElementById('clock').innerText = time;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
 </body>
 </html>

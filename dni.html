@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graham's World - DNI</title>
+    <link rel="icon" type="image/png" href="https://win98icons.alexmeub.com/icons/png/windows-0.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<div class="desktop-wallpaper">
+    <div class="container">
+        <header class="system-header">
+            <div class="title-strip">
+                <img src="https://win98icons.alexmeub.com/icons/png/msie2-2.png" alt="icon">
+                <span class="brand-name">GRAEUM.SYS</span>
+                <div class="header-clock" id="clock">00:00:00</div>
+            </div>
+        </header>
+
+        <div class="layout-grid">
+            <aside class="sidebar-left">
+                <div class="win95-box">
+                    <div class="win95-header"><span>Navigation</span></div>
+                    <div class="win95-body no-padding">
+                        <nav class="side-nav">
+                            <a href="index.html" class="nav-item">Home</a>
+                            <a href="profile.html" class="nav-item">Profile</a>
+                            <a href="interests.html" class="nav-item">Interests</a>
+                            <a href="dni.html" class="nav-item danger active">DNI</a>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="content-main">
+                <div class="win95-box" style="border: 2px solid #800000;">
+                    <div class="win95-header" style="background: #800000;">
+                        <span>System Error: Boundary Protection</span>
+                    </div>
+                    <div class="win95-body" style="background: #fff;">
+                        <div style="display: flex; gap: 20px; align-items: flex-start;">
+                            <img src="https://win98icons.alexmeub.com/icons/png/msg_error-0.png" alt="error" width="48">
+                            <div>
+                                <h1 style="color: #800000; margin-top: 0;">DO NOT INTERACT</h1>
+                                <p>Standard DNI criteria applies. Do not follow if you are:</p>
+                                <ul style="line-height: 1.6;">
+                                    <li>Racist, Homophobic, or Transphobic.</li>
+                                    <li>A "pro-shipper" or advocate for harmful content.</li>
+                                    <li>General shitty person/twat.</li>
+                                    <li>Under 13 years of age.</li>
+                                </ul>
+                                <button onclick="history.back()" style="padding: 5px 20px; cursor: pointer;">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<footer class="win95-taskbar">
+    <button class="start-btn">Start</button>
+</footer>
+
+<script>
+    function updateClock() {
+        const d = new Date();
+        const time = d.getHours().toString().padStart(2, '0') + ":" + 
+                     d.getMinutes().toString().padStart(2, '0') + ":" + 
+                     d.getSeconds().toString().padStart(2, '0');
+        document.getElementById('clock').innerText = time;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+</body>
+</html>

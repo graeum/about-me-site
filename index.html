@@ -2,94 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>~*~ My XP Desktop ~*~</title>
+    <title>Graham's World</title>
+    <link rel="icon" type="image/png" href="https://win98icons.alexmeub.com/icons/png/windows-0.png">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensures the high-res image fits the window without stretching the layout */
+        .img-frame img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-<div class="desktop-container">
-    
-    <header class="xp-window banner-window">
-        <div class="xp-title">
-            <span>system_header.exe</span>
-            <div class="controls"><button>_</button><button>X</button></div>
-        </div>
-        <div class="xp-body banner-gradient">
-            <h1 class="pixel-font">MARSH_STYLE_HOME</h1>
-            <div class="banner-sub">marshdotcom.neocities.org vibe</div>
-        </div>
-    </header>
+<div class="desktop-wallpaper">
+    <div class="container">
+        <header class="system-header">
+            <div class="title-strip">
+                <img src="https://win98icons.alexmeub.com/icons/png/msie2-2.png" alt="icon">
+                <span class="brand-name">GRAEUM.SYS</span>
+                <div class="header-clock" id="clock">00:00:00</div>
+            </div>
+            <div class="image-marquee-container">
+                <div class="marquee-track">
+                    <img src="https://64.media.tumblr.com/7659b403513faa4c91564320c35021ab/a3884883a9200b68-c3/s250x400/6fa02a9bcb33d500a9b945e2cf78cd359afbec34.gifv" alt="1">
+                    <img src="https://64.media.tumblr.com/7bb530088dadd7a0114e33d39d4b58a9/a3884883a9200b68-cb/s250x400/426091f373e0ed871a80f16af08399a545706484.gifv" alt="2">
+                    <img src="https://64.media.tumblr.com/64eebb3267828eac4b92be9e498bcc2e/7e983b911b6bf8de-6d/s250x400/ac6f96314caeecfd14b5d575c27e4bfdeb2c7c45.gifv" alt="3">
+                    <img src="https://64.media.tumblr.com/9c48e0c3a4408a3caf6fd572760307f4/7e983b911b6bf8de-51/s250x400/1f0e40c41f8d18680ec05f27d8093a4e9039010e.gifv" alt="4">
+                    <img src="https://64.media.tumblr.com/cf9c3efd86ebaab7b5c9b7410a129246/4ed22129fdd9c51a-8e/s250x400/dc1a2b5376139004b7541e19cd39c3c1fa3f0a33.gifv" alt="1">
+                    <img src="https://64.media.tumblr.com/a91787c346ed207826aad4da687effd2/d5c9c42d8e789b8e-bc/s250x400/dc6e9ef5679d94f6858c3499ed596eba1688280f.gifv" alt="2">
+                    <img src="https://64.media.tumblr.com/0606b820fe983c5ede79a03865800f5b/d5c9c42d8e789b8e-e2/s250x400/32d99503cd79f00b85b88405f0a547a45faa5931.gifv" alt="3">
+                    <img src="https://64.media.tumblr.com/8c27998f53a583aaf741266add21b19d/7d1cabdbcea12f0a-ca/s250x400/b45c7bad37315f5060c613ef02c2cfdf0d68ff29.gifv" alt="4">
 
-    <div class="interface-grid">
-        
-        <aside class="side-col">
-            <section class="xp-window">
-                <div class="xp-title"><span>navigation</span></div>
-                <div class="xp-body">
-                    <div class="nav-links">
-                        <a href="profile.html" class="xp-btn">profile</a>
-                        <a href="#" class="xp-btn">interests</a>
-                        <a href="#" class="xp-btn">guestbook</a>
-                    </div>
+                    
                 </div>
-            </section>
+            </div>
+        </header>
 
-            <section class="xp-window">
-                <div class="xp-title"><span>stamps</span></div>
-                <div class="xp-body inset-spot">
-                    <div class="blinkie-grid">
-                        <div class="placeholder-stamp"></div>
-                        <div class="placeholder-stamp"></div>
-                        <div class="placeholder-blinkie"></div>
+        <div class="layout-grid">
+            <aside class="sidebar-left">
+                <div class="win95-box">
+                    <div class="win95-header">
+                        <span>Navigation</span>
+                        <div class="win95-controls">
+                            <button class="win95-btn-ctrl"><span>_</span></button>
+                            <button class="win95-btn-ctrl"><span>□</span></button>
+                            <button class="win95-btn-ctrl close"><span>✕</span></button>
+                        </div>
+                    </div>
+                    <div class="win95-body no-padding">
+                        <nav class="side-nav">
+                            <a href="index.html" class="index.html">Home</a>
+                            <a href="profile.html" class="nav-item">Profile</a>
+                            <a href="https://your-guestbook-link.com" target="_blank" class="nav-item">Guestbook</a>
+                            <a href="byf.html" class="byf.html">Interact</a>
+                            <a href="interests.html" class="interests.html">Interests</a>
+                            <a href="dni.html" class="dni.html">DNI</a>
+                        </nav>
                     </div>
                 </div>
-            </section>
-        </aside>
 
-        <main class="main-col">
-            
-            <section class="xp-window">
-                <div class="xp-title">
-                    <span>home - notepad</span>
-                    <div class="controls"><button>_</button><button>X</button></div>
-                </div>
-                <div class="xp-body white-page">
-                    <div class="welcome-frame">
-                        <div class="img-placeholder">WELCOME IMAGE HERE</div>
+                <div class="win95-box">
+                    <div class="win95-header">
+                        <span>System Updates</span>
+                        <div class="win95-controls">
+                            <button class="win95-btn-ctrl"><span>_</span></button>
+                            <button class="win95-btn-ctrl"><span>□</span></button>
+                            <button class="win95-btn-ctrl close"><span>✕</span></button>
+                        </div>
                     </div>
-                    <div class="notepad-text">
-                        <div class="tag">bio</div>
-                        <p>i'm currently a college senior and a cartoonist! i love the indie web aesthetic.</p>
-                        <div class="tag">about the site</div>
-                        <p>this site is best experienced on desktops at 800x600 resolution.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="xp-window">
-                <div class="xp-title">
-                    <span>live chat</span>
-                    <div class="controls"><button>?</button><button>X</button></div>
-                </div>
-                <div class="xp-body">
-                    <div class="inset-spot chat-history">
-                        <div class="msg"><strong>bomtode:</strong> meow!</div>
-                        <div class="msg"><strong>franco:</strong> hello world!</div>
-                    </div>
-                    <div class="cbox-well">
-                        <div class="cbox-header">Cbox <span>[?]</span></div>
-                        <div class="inset-spot input-bg">
-                            <input type="text" placeholder="name" class="xp-input">
-                            <input type="text" placeholder="message" class="xp-input">
-                            <button class="xp-send-btn">SEND</button>
+                    <div class="win95-body update-log-scroll">
+                        <div class="log-entry">
+                            <span class="log-date">[03.26.26]</span>
+                            <p>Migrated Guestbook to Navigation. Updated header clock protocols.</p>
+                        </div>
+                        <div class="log-entry">
+                            <span class="log-date">[03.25.26]</span>
+                            <p>Installed Image Marquee v2.0. Fixed pixel dithering on main frames.</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </aside>
 
-        </main>
+            <main class="content-main">
+                <div class="win95-box">
+                    <div class="win95-header">
+                        <span>welcome.txt - Notepad</span>
+                        <div class="win95-controls">
+                            <button class="win95-btn-ctrl"><span>_</span></button>
+                            <button class="win95-btn-ctrl"><span>□</span></button>
+                            <button class="win95-btn-ctrl close"><span>✕</span></button>
+                        </div>
+                    </div>
+                    <div class="win95-body content-scroll-area">
+                        <h1 class="pixel-h1">welcome!</h1>
+                        <div class="img-frame">
+                            <img src="https://i.pinimg.com/1200x/38/c0/d3/38c0d3e235393e71cd36fada1a836d3f.jpg" alt="Main">
+                        </div>
+                        <p>Formal archive running on legacy 2026 protocols. Best viewed in 1024x768.</p>
+                        
+                        <div class="win95-box sub-win">
+                            <div class="win95-header blue-grad">
+                                <span>Media Player</span>
+                            </div>
+                            <div class="win95-body player-bg">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/6oqXVxXiHq4" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="sidebar-right">
+               
+                    <div class="desktop-icon-layer">
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/paint_file-2.png" alt="paint">
+        <span>MS Paint</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/calculator-0.png" alt="calc">
+        <span>Calculator</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/media_player-0.png" alt="media">
+        <span>Media Player</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="files">
+        <span>My Documents</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/mailbox_world-2.png" alt="inbox">
+        <span>Inbox</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/msn-0.png" alt="msn">
+        <span>The Microsoft Network</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/briefcase-2.png" alt="briefcase">
+        <span>My Briefcase</span>
+    </a>
+    <a href="#" class="desktop-icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty-0.png" alt="bin">
+        <span>Recycle Bin</span>
+    </a>
+</div>
+                </div>
+            </aside>
+        </div>
     </div>
 </div>
 
+<footer class="win95-taskbar">
+    <button class="start-btn">
+        <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png" width="16"> 
+        <span>Start</span>
+    </button>
+    <div class="task-active"></div>
+</footer>
+
+<script>
+    function updateClock() {
+        const d = new Date();
+        const time = d.getHours().toString().padStart(2, '0') + ":" + 
+                     d.getMinutes().toString().padStart(2, '0') + ":" + 
+                     d.getSeconds().toString().padStart(2, '0');
+        document.getElementById('clock').innerText = time;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
 </body>
 </html>

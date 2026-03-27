@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graham's World - Interests</title>
+    <link rel="icon" type="image/png" href="https://win98icons.alexmeub.com/icons/png/windows-0.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<div class="desktop-wallpaper">
+    <div class="container">
+        <header class="system-header">
+            <div class="title-strip">
+                <img src="https://win98icons.alexmeub.com/icons/png/msie2-2.png" alt="icon">
+                <span class="brand-name">GRAEUM.SYS</span>
+                <div class="header-clock" id="clock">00:00:00</div>
+            </div>
+        </header>
+
+        <div class="layout-grid">
+            <aside class="sidebar-left">
+                <div class="win95-box">
+                    <div class="win95-header"><span>Navigation</span></div>
+                    <div class="win95-body no-padding">
+                        <nav class="side-nav">
+                            <a href="index.html" class="nav-item">Home</a>
+                            <a href="profile.html" class="nav-item">Profile</a>
+                            <a href="interests.html" class="nav-item active">Interests</a>
+                            <a href="dni.html" class="nav-item danger">DNI</a>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="content-main">
+                <div class="win95-box">
+                    <div class="win95-header"><span>BYF.txt - Notepad</span></div>
+                    <div class="win95-body content-scroll-area">
+                        <p><b>BEFORE YOU FOLLOW:</b></p>
+                        <ul>
+                            <li>I am 17 and post frequently.</li>
+                            <li>I tend to use a lot of caps and keyboard smashes.</li>
+                            <li>I'm very hyper-fixated on my interests!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="win95-box">
+                    <div class="win95-header"><span>C:\WINDOWS\INTERESTS</span></div>
+                    <div class="win95-body no-padding" style="background: white;">
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); padding: 20px; gap: 20px; text-align: center;">
+                            <div class="interest-item">
+                                <img src="https://win98icons.alexmeub.com/icons/png/world-3.png" width="32"><br>Coding
+                            </div>
+                            <div class="interest-item">
+                                <img src="https://win98icons.alexmeub.com/icons/png/cd_audio_cd_a-4.png" width="32"><br>Music
+                            </div>
+                            <div class="interest-item">
+                                <img src="https://win98icons.alexmeub.com/icons/png/camera-0.png" width="32"><br>Editing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<footer class="win95-taskbar">
+    <button class="start-btn">Start</button>
+</footer>
+
+<script>
+    function updateClock() {
+        const d = new Date();
+        const time = d.getHours().toString().padStart(2, '0') + ":" + 
+                     d.getMinutes().toString().padStart(2, '0') + ":" + 
+                     d.getSeconds().toString().padStart(2, '0');
+        document.getElementById('clock').innerText = time;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+</body>
+</html>
